@@ -1,0 +1,23 @@
+<h1 id='architecture'>Architecture</h1>
+<p><img src ="../images/architecture.png" /></p>
+
+<p>The app consists of the following layers:</p>
+
+<p>DataSource
+Provides data by wrapping a data retrieval dependency, and mapping its DTOs into application specific domain model. Examples for data sources contain network clients, sensor API wrappers, in-memory caches.</p>
+
+<p>Repository
+Responsible for abstracting data retrieval implementation details by wrapping one or more datasources and providing caching logic when necessary.</p>
+
+<p>UseCase
+A UseCase is responsible for handling the business logic related to a specific feature.</p>
+
+<p>ViewModel
+The main contact point on top of android framework and responsible for publishing and binding the data with UI and accepting user input and pass it to corresponding use case.</p>
+
+<p>Activity/Fragment
+Implements the view layer, its responsibility is to implement the UI, //todo bind to the ViewModel&#39;s exposed inputs and outputs, using Databinding.</p>
+
+<p>Each feature should have ⬇️</p>
+
+<p><img src="../images/feature-packages-architecture.png" width="60%" /></p>
