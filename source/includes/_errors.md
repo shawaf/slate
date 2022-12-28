@@ -6,6 +6,9 @@ This error section is stored in a separate file in <code>includes/_errors.md</co
 
 The Kittn API uses the following error codes:
 
+<img src =https://user-images.githubusercontent.com/98387885/204153745-be057191-ee19-40ae-8840-1c78ee4071cd.png height="200" />
+
+
 
 Error Code | Meaning
 ---------- | -------
